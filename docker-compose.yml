@@ -3,8 +3,6 @@ services:
   app:
     build: ./app
     container_name: fastapi_app
-    env_file:
-      - .env
     restart: always
     networks:
       - appnet
