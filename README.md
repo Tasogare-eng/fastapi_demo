@@ -9,7 +9,12 @@ pip install -r requirements.txt
 uvicorn main:app --reload --port 8000
 ```
 
-### docker
+## API
+Openweatehermap API
+.envに設定
+OPENWEATHER_API_KEY={YOUR API KEY}
+
+### docker(FastAPI+nginx+uvicorn)
 ```bash
 docker-compose up --build -d
 ```
